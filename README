@@ -1,0 +1,27 @@
+Kohana Multiformat Config/I18n Thing
+
+Allows you to use files other than PHP arrays for Kohana 3.x config and i18n!
+
+Currently supports the following:
+    * Standard PHP Arrays
+    * JSON
+    * INI
+    * YAML (through spyc - http://code.google.com/p/spyc/ - in vendors folder)
+    
+How to use it:
+
+    -Copy files to modules/multiformat
+    -Enable the module
+
+    For Config - add this to the bootstrap.php:
+    
+    Kohana::$config->attach(new Multiformat_Config_File);
+    
+    Make sure to use that line *under* the module definition (and replace the Kohana_Config_File attachment I guess?)
+    
+    For i18n
+    
+    Should just work!
+    
+    
+Neat!
