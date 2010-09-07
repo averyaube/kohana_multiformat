@@ -29,7 +29,7 @@ class Multiformat_Parser {
 
     static function yaml($data)
     {
-        require Kohana::find_file('vendor', 'spyc/spyc');
+        require_once Kohana::find_file('vendor', 'spyc/spyc');
         return Spyc::YAMLLoadString($data);
     }
 
