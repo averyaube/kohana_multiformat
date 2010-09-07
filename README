@@ -10,18 +10,17 @@ Currently supports the following:
     
 How to use it:
 
-    -Copy files to modules/multiformat
-    -Enable the module
+    *Copy files to modules/multiformat
+    *Enable the module
 
-    For Config - add this to the bootstrap.php:
+    For Config
+        Add this to the bootstrap.php:
     
-    Kohana::$config->attach(new Multiformat_Config_File);
+        Kohana::$config->attach(new Multiformat_Config_File);
     
-    Make sure to use that line *under* the module definition (and replace the Kohana_Config_File attachment I guess?)
+        Make sure to use that line *under* the module definition (and replace the Kohana_Config_File attachment I guess?)
     
     For i18n
-    
-    Should just work!
-    
+        Should just work!
     
 Neat!
